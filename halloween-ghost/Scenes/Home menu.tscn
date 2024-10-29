@@ -1,0 +1,98 @@
+[gd_scene load_steps=9 format=3 uid="uid://ci3pwf13hlcje"]
+
+[ext_resource type="Texture2D" uid="uid://cudigbx5u3vos" path="res://Graveyard/Parallax Background/Background/Sky.png" id="1_20436"]
+[ext_resource type="Texture2D" uid="uid://boyllgbk5t3b7" path="res://Graveyard/Parallax Background/Background/Cloud 3.png" id="2_6gnns"]
+[ext_resource type="Texture2D" uid="uid://danqqgqmon3ka" path="res://Graveyard/Parallax Background/Background/Cloud 2.png" id="3_m3cqq"]
+[ext_resource type="Texture2D" uid="uid://dy4e3hs0yrcrs" path="res://Graveyard/Parallax Background/Background/Cloud 1.png" id="4_xtk0j"]
+[ext_resource type="Texture2D" uid="uid://over64hx7yu2" path="res://Graveyard/Parallax Background/Background/Moon.png" id="5_stvgq"]
+[ext_resource type="Texture2D" uid="uid://cbbhjdtq6n531" path="res://Graveyard/Parallax Background/Mountain/Mountain 1.png" id="6_5x32f"]
+[ext_resource type="Texture2D" uid="uid://c2ajirydx5md4" path="res://Graveyard/Parallax Background/Mountain/Mountain 2.png" id="7_fn0ay"]
+[ext_resource type="Texture2D" uid="uid://dujmwy1c2fcgm" path="res://Graveyard/Parallax Background/Mountain/Mountain.png" id="8_v4qoj"]
+
+[node name="HomeMenu" type="Node2D"]
+position = Vector2(384, 108)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+custom_minimum_size = Vector2(250, 100)
+offset_left = 301.0
+offset_top = 212.0
+offset_right = 551.0
+offset_bottom = 312.0
+disabled = true
+text = "PLAY"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+custom_minimum_size = Vector2(250, 100)
+offset_left = 703.0
+offset_top = 242.0
+offset_right = 953.0
+offset_bottom = 342.0
+disabled = true
+text = "EXIT"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sky" type="Parallax2D" parent="CanvasLayer"]
+scroll_offset = Vector2(1, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Sky"]
+position = Vector2(277, 166)
+scale = Vector2(1.73125, 1.84444)
+texture = ExtResource("1_20436")
+
+[node name="Cloud 3" type="Parallax2D" parent="CanvasLayer"]
+scroll_offset = Vector2(1, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Cloud 3"]
+position = Vector2(161, 92)
+texture = ExtResource("2_6gnns")
+
+[node name="Cloud 2" type="Parallax2D" parent="CanvasLayer"]
+scroll_offset = Vector2(1, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Cloud 2"]
+position = Vector2(275.5, 169)
+scale = Vector2(1.72187, 1.86667)
+texture = ExtResource("3_m3cqq")
+
+[node name="Cloud 1" type="Parallax2D" parent="CanvasLayer"]
+scroll_offset = Vector2(1, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Cloud 1"]
+position = Vector2(278, 167.5)
+scale = Vector2(1.725, 1.85)
+texture = ExtResource("4_xtk0j")
+
+[node name="Moon" type="Parallax2D" parent="CanvasLayer"]
+scroll_offset = Vector2(384, 108)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Moon"]
+position = Vector2(-106.5, 61.5)
+scale = Vector2(1.72187, 1.83889)
+texture = ExtResource("5_stvgq")
+
+[node name="Mountain 1" type="Parallax2D" parent="CanvasLayer"]
+scroll_offset = Vector2(384, 108)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Mountain 1"]
+position = Vector2(-106, 63)
+scale = Vector2(1.725, 1.84444)
+texture = ExtResource("6_5x32f")
+
+[node name="Mountain 2" type="Parallax2D" parent="CanvasLayer"]
+scroll_offset = Vector2(1, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Mountain 2"]
+position = Vector2(276.5, 170.5)
+scale = Vector2(1.73438, 1.87222)
+texture = ExtResource("7_fn0ay")
+
+[node name="Mountain 3" type="Parallax2D" parent="CanvasLayer"]
+scroll_offset = Vector2(-1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Mountain 3"]
+position = Vector2(279, 167)
+scale = Vector2(1.725, 1.82222)
+texture = ExtResource("8_v4qoj")
