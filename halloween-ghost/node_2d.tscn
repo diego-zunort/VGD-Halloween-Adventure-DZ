@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://dnh0qrtcx0gmc"]
+[gd_scene load_steps=2 format=3 uid="uid://dnh0qrtcx0gmc"]
+
+[ext_resource type="Script" path="res://button.gd" id="1_kmce4"]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(400, 209)
+
+[node name="Button" type="Button" parent="."]
+offset_right = 506.0
+offset_bottom = 120.0
+text = "My name"
+script = ExtResource("1_kmce4")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
